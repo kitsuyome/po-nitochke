@@ -6,9 +6,24 @@ app = Flask(__name__)
 ads = [
     {"x": 0, "y": 0, "width": 100, "height": 100, 
      "image": "/static/images/thd.jpeg", 
-     "title": "Подпись 1", "url": "http://example.com"},
-    # Добавь другие рекламные блоки по аналогии
+     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322"},
+    {"x": 100, "y": 0, "width": 100, "height": 100, 
+     "image": "/static/images/thd.jpeg", 
+     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322"},
+    {"x": 0, "y": 100, "width": 100, "height": 100, 
+     "image": "/static/images/thd.jpeg", 
+     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322"},
+    {"x": 100, "y": 100, "width": 100, "height": 100, 
+     "image": "/static/images/thd.jpeg", 
+     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322",
+     },
+     {"x": 900, "y": 900, "width": 100, "height": 100, 
+     "image": "/static/images/thd.jpeg", 
+     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322",
+     },
+    #  другие рекламные блоки по аналогии
 ]
+
 
 # Расчёт проданных и доступных пикселей
 total_pixels = 1000000  # Всего пикселей
