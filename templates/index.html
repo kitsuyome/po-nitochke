@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Million Dollar Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="info-box">
+        <p>Продано: {{ sold_pixels }}</p>
+        <p>Доступно: {{ available_pixels }}</p>
+    </div>
+    <div class="ads-container">
+        {% for ad in ads %}
+            <a href="{{ ad.url }}" target="_blank" class="ad" style="left: {{ ad.x }}px; top: {{ ad.y }}px; width: {{ ad.width }}px; height: {{ ad.height }}px;">
+                <img src="{{ ad.image }}" alt="Ad" title="{{ ad.title }}" style="width: 100%; height: 100%;">
+            </a>
+        {% endfor %}
+    </div>
+</body>
+</html>

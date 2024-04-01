@@ -1,0 +1,20 @@
+.info-box {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.ads-container {
+    position: relative;
+    width: 1000px; /* Общая ширина контейнера */
+    height: 1000px; /* Общая высота контейнера */
+    border: 1px solid #000; /* Для наглядности */
+}
+
+.ad {
+    position: absolute;
+    border: 1px solid #000; /* Рамка вокруг рекламного блока */
+}
