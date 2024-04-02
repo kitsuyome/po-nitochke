@@ -4,28 +4,12 @@ app = Flask(__name__)
 
 # Пример списка рекламных блоков
 ads = [
-    {"x": 0, "y": 0, "width": 100, "height": 100, 
+    {"width": 10, "height": 10, 
      "image": "/static/images/thd.jpeg", 
-     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322"},
-    {"x": 100, "y": 0, "width": 100, "height": 100, 
-     "image": "/static/images/thd.jpeg", 
-     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322"},
-    {"x": 0, "y": 100, "width": 100, "height": 100, 
-     "image": "/static/images/thd.jpeg", 
-     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322"},
-    {"x": 100, "y": 100, "width": 100, "height": 100, 
-     "image": "/static/images/thd.jpeg", 
-     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322",
-     },
-     {"x": 900, "y": 900, "width": 100, "height": 100, 
-     "image": "/static/images/thd.jpeg", 
-     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322",
-     },
-    #  другие рекламные блоки по аналогии
+     "title": "Величайший паблик про Доту", "url": "http://vk.com/thd322"}
 ]
 
-
-# Расчёт проданных и доступных пикселей
+# Расчёт проданных и доступных пикселей -- сейчас кажется неправильно
 total_pixels = 1000000  # Всего пикселей
 sold_pixels = sum(ad['width'] * ad['height'] for ad in ads)  # Суммарная площадь проданных пикселей
 available_pixels = total_pixels - sold_pixels  # Доступные пиксели
